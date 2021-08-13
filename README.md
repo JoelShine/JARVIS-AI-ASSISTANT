@@ -6,7 +6,7 @@ Unlike other assistants, this **JARVIS** is truly an ai written with ALICE files
 Any issues on downloading and using this assistant, feel free to raise an [issue](https://github.com/JoelShine/JARVIS-AI-ASSISTANT/issues) so I can look into the problem code. Please follow the below installation process to get it done nicely for your needs.
 
 ## About JARVIS
-Jarvis is actually an ai which was introduced in the first Iron Man movie. A very spohisticated AI for Tony Stark made programmers think about making their on AI Assistants. This JARVIS also was made in that way.
+Jarvis is actually an ai which was introduced in the first Iron Man movie. A very spohisticated AI for Tony Stark made programmers think about making their on AI Assistants. This JARVIS also got it's inspiration fro Iron Man movies.
 JARVIS has it's on meaning and mine is **JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE"**. I do love acronyms !
 
 There had been many different versions of my Jarvis in the past few months. First, it had been a text assistnat, then speech came and this version is my first every fully artificially intelligent jarvis program with AIML. This is completely written in Python and it is compatible with almost all systems (Mac OS, Linux and Windows(Recommended)). Being written in Windows, it is more suitable to be used in Windows. Some minor changes will be needed to run on other os.
