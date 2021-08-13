@@ -13,5 +13,9 @@ There had been many different versions of my Jarvis in the past few months. Firs
 
 ## Specialty of JARVIS
 <ul>
-  <li>Fully autonomous with <b>AIML</b> and <b>Lisp</b> as the brain of JARVIS</li>
+  <li>Fully autonomous with <b>AIML</b> and <b>Lisp</b> as the brain of JARVIS.</li>
+  <li>Support with offline speech recognition with the help of <b>vosk</b> models.</li>
+  <li>Offline Text to Speech service with <b>pyttsx3</b>.</li>
+  <li>More surer program launching mechanism.</li>
+  <li>Very powerful chat mode with ALICE files.</li>
 </ul>
