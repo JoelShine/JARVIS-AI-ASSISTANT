@@ -31,5 +31,5 @@ See my second JARVIS initiative (speech recognition) - https://github.com/JoelSh
 For getting JARVIS up and running, the instructions are given below :
 ### Environment setup
 <ul>
-  <li><h2>You need to have Python <b>3.7</b> or later versions top run Jarvis. Jarvis is initially developed in Python 3.8.9, so getting the same version will be nice to avoid any other issues but <b>3.7</b> or later is also okay</h2></li>
+  <li><h4>You need to have Python <b>3.7</b> or later versions top run Jarvis. Jarvis is initially developed in Python 3.8.9, so getting the same version will be nice to avoid any other issues but <b>3.7</b> or later is also okay</h4></li>
 </ul>
