@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<category><pattern>GOSSIP</pattern>
+<template><random><li>JARVIS is a very nice program.</li> <li>JARVIS is written with the help of Alice AIML</li> <li>Gossiping is not one of my favourite things</li><li>I really do like telling stories</li><li>My boss's most important project was to make an AI</li><li>The inspiration is from Jarvis in Iron Man</li><li>Having a body of my own is not a bad idea (from Vision)</li><li>I am fan of Marvel comics !</li><li>I love spiderman because he is super strong and can climb</li><li>Webs make me dizzy.</li></random></template>
+</category>
+</aiml>

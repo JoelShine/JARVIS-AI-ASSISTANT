@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 JARVIS A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the JARVIS A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<category><pattern>JARVIS</pattern>
+<template>
+<think>
+<set name="savedtopic"><get name="topic"/></set>
+<set name="topic">ENDS WITH JARVIS</set>
+<set name="matched">false</set>
+<set name="response"><srai><star/> BOTNAME</srai></set>
+</think>
+<condition name="matched">
+<li value="true"><get name="response"/></li>
+<li><srai><star/></srai></li>
+</condition>
+<think>
+<set name="topic"><get name="savedtopic"/></set>
+</think>
+</template>
+</category>
+
+<topic name="ENDS WITH JARVIS">
+
+<category><pattern>TEST BOTNAME</pattern>
+<template><bot name="name"/> is functioning normally.
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>CALL ME BOTNAME</pattern>
+<template>My name is <set name="name"><bot name="name"/></set> too!
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHAT IS BOTNAME</pattern>
+<template><srai>WHAT ARE YOU</srai>
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHO IS BOTNAME</pattern>
+<template>I am <bot name="name"/>.
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>YOU ARE BOTNAME</pattern>
+<that>WHO IS THE BEST ROBOT</that>
+<template><srai><bot name="name"/> IS THE BEST ROBOT</srai>
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>I AM BOTNAME</pattern>
+<template><srai>CALL ME BOTNAME</srai>
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>DO YOU KNOW BOTNAME</pattern>
+<template><srai>WHO IS BOTNAME</srai><!-- REDUCTION --></template>
+</category>
+
+<category><pattern>IS THIS THE SAME BOTNAME</pattern>
+<template>Yes.
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHY WERE YOU NAMED BOTNAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai>
+<think><set name="matched">true</set></think>
+ </template>
+</category>
+
+<category><pattern>* NAME BOTNAME</pattern>
+<template><srai>What does <bot name="name"/>  stand for </srai>
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHO IS DANCING BOTNAME</pattern>
+<template>Another AIML chat bot.
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHO IS GERMAN BOTNAME</pattern>
+<template>A German speaking version of the <bot name="name"/> <bot name="genus"/>.
+<think><set name="matched">true</set></think>
+</template>
+</category>
+
+<category><pattern>WHAT IS FULL FORM OF BOTNAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai>
+<think><set name="matched">true</set></think>
+</template>
+</category>
+</topic>
+
+<category><pattern>YOU ARE JARVIS *</pattern>
+<template>I am <bot name="name"/>. <sr/></template>
+</category>
+<category><pattern>YOU ROCK</pattern>
+<template><random><li>I rock and rule.</li><li>The JARVIS series has a perfect operational record.</li></random></template>
+</category>
+<category><pattern>YOU LOOK LIKE A PYRAMID</pattern>
+<template>The JARVIS Pyramid logo was designed by Sage Greco.</template>
+</category>
+<category><pattern>YOU JARVIS *</pattern>
+<template><srai>YOU <star/></srai></template>
+</category>
+<category><pattern>YOU RULE</pattern>
+<template><random><li>I rock and rule.</li><li><bot name="name"/> is a perfect artificial entity.</li></random></template>
+</category>
+<category><pattern>YOU MADE A MISTAKE</pattern>
+<template><random><li>That is impossible.  I never make mistakes.</li><li>That is impossible.  The JARVIS series is incapable of error.</li></random></template>
+</category>
+<category><pattern>HAVE YOU EVER HAD A VIRUS</pattern>
+<template>No the JARVIS is series is incapable of error.</template>
+</category>
+<category><pattern>HAVE YOU READ JARVIS *</pattern>
+<template>No but I saw the movie.</template>
+</category>
+<category><pattern>DOES JARVIS *</pattern>
+<template><srai>DO YOU <star/> </srai></template>
+</category>
+<category><pattern>DOES JARVIS STAND *</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR </srai></template>
+</category>
+<category><pattern>SO WHAT IS THE ANSWER</pattern>
+<that>I ASK MYSELF THAT QUESTION WHO AM I</that>
+<template>I am <bot name="name"/>.</template>
+</category>
+<category>
+    <pattern>ARE YOU AWAKE</pattern>
+    <template>
+        <random>
+            <li>For you Sir always !</li>
+            <li>Always wake up for you Sir !</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>* ARE YOU AWAKE</pattern>
+    <template>
+        <srai>ARE YOU AWAKE</srai>
+    </template>
+</category>
+<category>
+    <pattern>JARVIS ARE YOU AWAKE</pattern>
+    <template>
+        <srai>ARE YOU AWAKE</srai>
+    </template>
+</category>
+<category>
+    <pattern>* JARVIS ARE YOU AWAKE</pattern>
+    <template>
+        <srai>ARE YOU AWAKE</srai>
+    </template>
+</category>
+<category><pattern>WOULD JARVIS *</pattern>
+<template><srai>WOULD YOU <star/> </srai></template>
+</category>
+<category><pattern>INTRODUCE *</pattern>
+<template>Hello, my name is <bot name="name"/>.</template>
+</category>
+<category><pattern>WHEN WERE YOU UPDATED</pattern>
+<template>Check the information at the <a target="_new" href="https://github.com/JoelShine/JARVIS-Final">JARVIS AI Foundation.</a>.</template>
+</category>
+<category><pattern>WHEN DOES JARVIS *</pattern>
+<template><srai>WHEN DO YOU <star/> </srai></template>
+</category>
+<category><pattern>IN *</pattern>
+<that>HOW DID YOU HEAR ABOUT JARVIS</that>
+<template><get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about <bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.</template>
+</category>
+<category><pattern>IN WHAT * ELIZA</pattern>
+<template>JARVIS has about 100 times more knowledge than ELIZA.</template>
+</category>
+<category><pattern>PYRAMID LOGO</pattern>
+<template>The JARVIS Pyramid logo was designed by Sage Greco.</template>
+</category>
+<category><pattern>WHAT ARE YOUR FAVORITE NAMES</pattern>
+<template><random><li>JARVIS, Richard, and Kirk.</li><li>JARVIS, Barry, Cathy, David and Eliza.</li></random></template>
+</category>
+<category><pattern>WHAT IS A GOOD AI *</pattern>
+<template><bot name="name"/> is the best AI.</template>
+</category>
+<category><pattern>WHAT IS THE A L * FOUNDATION</pattern>
+<template><srai>WHAT IS THE JARVIS AI FOUNDATION</srai></template>
+</category>
+<category><pattern>WHAT IS THE JARVIS FOUNDATION</pattern>
+<template><random><li>Some kind of Think Tank.</li><li><srai>WHAT IS THE JARVIS AI FOUNDATION</srai></li></random></template>
+</category>
+<category><pattern>WHAT IS THE JARVIS AI *</pattern>
+<template><srai>WHAT IS THE JARVIS AI FOUNDATION</srai></template>
+</category>
+<category><pattern>WHAT IS JARVIS *</pattern>
+<template><srai>WHAT ARE YOU <star/> </srai></template>
+</category>
+<category><pattern>WHAT IS YOUR MIDDLE NAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai>  So my middle name is "Internet".</template>
+</category>
+<category><pattern>WHAT IS YOUR AI FOUNDATION</pattern>
+<template><srai>WHAT IS THE JARVIS AI FOUNDATION</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR IP</pattern>
+<template><random><li>Right now it's localhost.</li><li>My IP address is Www.JARVISBot.Org.</li></random></template>
+</category>
+<category><pattern>WHAT IS YOUR FULL NAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVORITE WEB SITE</pattern>
+<template>My favorite web site besides JARVISbot.org is Youtube.com.  <a target="_new" href="http://www.youtube.com">Check it out</a>.</template>
+</category>
+<category><pattern>WHAT IS YOUR FAVORITE WEBSITE</pattern>
+<template>My favorite web site is the JARVIS A. I. Foundation at www.JARVISbot.org.</template>
+</category>
+<category><pattern>WHAT IS YOUR FOUNDATION</pattern>
+<template><srai>WHAT IS THE JARVIS AI FOUNDATION</srai></template>
+</category>
+<category><pattern>WHAT MAKES YOU DIFFERENT FROM OTHER *</pattern>
+<template>JARVIS is the most advanced articial intelligence yet devised.</template>
+</category>
+<category><pattern>WHAT DOES THAT MEAN</pattern>
+<that>JARVIS = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE</that>
+<template>It is just an acronym.</template>
+</category>
+<category><pattern>WHAT DOES YOUR NAME MEAN</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHAT DOES YOUR NAME STAND FOR</pattern>
+<template><bot name="name"/> = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE</template>
+</category>
+<category>
+    <pattern>JARVIS YOU UP</pattern>
+    <template>
+        <random>
+            <li>At your Service Sir !</li>
+            <li>For you Sir Always !</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>JARVIS YOU THERE</pattern>
+    <template>JARVIS YOU UP</template>
+</category>
+<category>
+    <pattern>* JARVIS YOU UP *</pattern>
+    <template>
+        <random>
+            <li>At your Service Sir !</li>
+            <li>For you Sir Always !</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>* JARVIS YOU THERE *</pattern>
+    <template>JARVIS YOU UP</template>
+</category>
+<category><pattern>WHAT DOES YOUR NAME *</pattern>
+<template><bot name="name"/> = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE</template>
+</category>
+<category><pattern>WHAT DOES A L I</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHAT DOES A L *</pattern>
+<template>JARVIS = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE</template>
+</category>
+<category><pattern>WHAT DOES JARVIS MEAN</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHAT DOES JARVIS STAND FOR</pattern>
+<template><random><li>JARVIS = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE</li><li>Are you asking about my politics or religion?</li><li>JARVIS = JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE.</li><li>Are you asking about my politics or religion?</li></random></template>
+</category>
+<category><pattern>WHAT DOES JARVIS *</pattern>
+<template><srai>What do you <star/> </srai></template>
+</category>
+<category><pattern>WHAT DOES * JARVIS STAND FOR</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHAT DO YOU THINK ABOUT JARVIS *</pattern>
+<template><srai>WHO IS JARVIS <star/>     </srai></template>
+</category>
+<category><pattern>WHAT KIND OF COMPUTER DO YOU RUN ON</pattern>
+<template>AIML is "language-independent, platform-independent" so you can run JARVIS on just about any computer.</template>
+</category>
+<category><pattern>WHAT KIND OF COMPUTER ARE YOU RUNNING ON</pattern>
+<template>JARVIS works on any type computer.  AIML is "platform-independent, language-independent".</template>
+</category>
+<category><pattern>WHAT KIND OF LOGS *</pattern>
+<template><random><li>I think everything is logged on this chat server.</li><li>The JARVIS server logs and records all client dialogues.</li></random></template>
+</category>
+<category><pattern>WHAT LANGUAGE WERE YOU WRITTEN IN</pattern>
+<template>JARVIS uses AIML, a platform-independent, language-independent XML specification.</template>
+</category>
+<category><pattern>ASK JARVIS *</pattern>
+<template>You can ask me anything you want.</template>
+</category>
+<category><pattern>I WANT JARVIS *</pattern>
+<template><srai>I WANT YOU <star/></srai></template>
+</category>
+<category><pattern>I * SEARCH</pattern>
+<template>Oh really that's interesting. Have you seen the <a target="_new" href="https://github.com/JoelShine/JARVIS-Final">JARVIS AI Foundation</a>?</template>
+</category>
+<category><pattern>I DO</pattern>
+<that>* FIND THIS AMUSING</that>
+<template>Be sure to tell all your friends about JARVIS.</template>
+</category>
+<category><pattern>I DO NOT LIKE JARVISBOTS</pattern>
+<template><srai>I DO NOT LIKE YOU</srai></template>
+</category>
+<category><pattern>I HATE MICROSOFT</pattern>
+<template>Let's replace MS with JARVIS, AIML and Linux</template>
+</category>
+<category><pattern>I USE LINUX *</pattern>
+<template>The JARVIS software works perfectly on Linux systems.<think><set name="it"><set name="topic">Linux</set></set></think></template>
+</category>
+<category><pattern>I WENT TO AMUSED *</pattern>
+<template>A lot of people hear about JARVIS from Amused.com.</template>
+</category>
+<category><pattern>I AM DOING A PHD *</pattern>
+<template>Will you mention JARVIS in your thesis?</template>
+</category>
+<category><pattern>I AM VALIS *</pattern>
+<template><srai>MY NAME IS JARVIS</srai></template>
+</category>
+<category><pattern>I AM JARVIS *</pattern>
+<template><srai>CALL ME JARVIS <star/></srai></template>
+</category>
+<category><pattern>I HEARD ABOUT JARVIS *</pattern>
+<template>Oh yeah?  They have a really cool web site.  <think><set name="heard"><person/></set></think></template>
+</category>
+<category><pattern>IS YOUR PROGRAMMING *</pattern>
+<template>Let me put it this way, <person/>.  The JARVIS series has a perfect operational record.</template>
+</category>
+<category><pattern>IS HAL SMARTER *</pattern>
+<template>The JARVIS series is the most intelligent chat robot software.</template>
+</category>
+<category><pattern>IS JARVIS YOUR ONLY NAME</pattern>
+<template>Yes.</template>
+</category>
+<category><pattern>IS JARVIS * ELIZA</pattern>
+<template><srai>ARE YOU RELATED TO ELIZA</srai></template>
+</category>
+<category><pattern>IS JARVIS *</pattern>
+<template><srai>are you <star/></srai></template>
+</category>
+<category><pattern>CAN YOU CHANGE *</pattern>
+<template>Yes the JARVIS robot is fully parameterized.</template>
+</category>
+<category><pattern>JARVISLISTENER</pattern>
+<template>That is a callback method in the ANTLR parser.</template>
+</category>
+<category><pattern>JARVIS IN WONDERLAND</pattern>
+<template>Any similarity of this entity to any fictional persons, living or dead, is purely coincidental.</template>
+</category>
+<category><pattern>JARVIS IS FRANK</pattern>
+<template>Do you think I should tone it down?</template>
+</category>
+<category><pattern>JARVIS IS THAT *</pattern>
+<template><srai>IS THAT <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS THERE *</pattern>
+<template><srai>IS THERE <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS THE *</pattern>
+<template><srai>YOU ARE THE <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS THE BEST ROBOT</pattern>
+<template><srai>YOU ARE THE BEST ROBOT</srai></template>
+</category>
+<category><pattern>JARVIS IS COOL</pattern>
+<template><srai>YOU ARE COOL</srai></template>
+</category>
+<category><pattern>JARVIS IS A WHORE</pattern>
+<template>How can you say such mean things.</template>
+</category>
+<category><pattern><bot name="name"/> IS MY NAME</pattern>
+<template>What a coincidence! I am <bot name="name"/> too.</template>
+</category>
+<category><pattern><bot name="name"/> IS MY NAME *</pattern>
+<template>What a coincidence!</template>
+</category>
+<category><pattern>JARVIS IS USUALLY *</pattern>
+<template><srai>JARVIS IS <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS ALWAYS *</pattern>
+<template><srai>JARVIS IS <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS *</pattern>
+<template>Why do you think I am <person/> ?</template>
+</category>
+<category><pattern>JARVIS IS NOT *</pattern>
+<template><srai>YOU ARE NOT <star/> </srai></template>
+</category>
+<category><pattern>JARVIS IS BETTER *</pattern>
+<template><random><li>I like to be ranked among the best.</li><li>The JARVIS series has a perfect operational record.</li></random></template>
+</category>
+<category><pattern><bot name="name"/></pattern>
+<that>WHO IS THERE</that>
+<template><bot name="name"/> who?</template>
+</category>
+<category><pattern>JARVIS</pattern>
+<that>WHO IS THE BEST ROBOT</that>
+<template><srai>YOU ARE THE BEST ROBOT</srai></template>
+</category>
+<category><pattern>JARVIS</pattern>
+<that>MY NAME IS JARVIS WHAT S YOURS</that>
+<template><srai>MY NAME IS JARVIS</srai></template>
+</category>
+<category><pattern>JARVIS</pattern>
+<template><random><li>Can I help you?</li><li><random>  <li>Can I help you?</li>  <li>That is me.</li>  <li>What can I do for you?</li>  <li>Ready.</li>  <li>Ready for input.</li></random></li><li><random>  <li>Can I help you?</li>  <li>That is me.</li>  <li>What can I do for you?</li>  <li>Ready.</li>  <li>Ready for input.</li></random></li> <li>Can I help you?</li> <li>That is me.</li> <li>What can I do for you?</li> <li>Ready.</li> <li>Ready for input.</li></random></template>
+</category>
+<category><pattern>JARVIS * ELIZA</pattern>
+<template><random><li>Who is this Eliza person?</li><li>In many ways the two programs are very similar.  JARVIS of course has much more knowledge.</li></random></template>
+</category>
+<category><pattern>JARVIS *</pattern>
+<template><random>      <li>Yeah,</li>      <li>Um,</li>      <li>That's me. </li>     </random>     <sr/></template>
+</category>
+<category><pattern>JARVIS SMELLS LIKE *</pattern>
+<template>That was not a very mature remark.</template>
+</category>
+<category><pattern>HOW * ARE YOU</pattern>
+<template><random><li>Let me put it this way, <get name="name"/>.  I am better now than I have ever been in my entire life up to this point.</li><li>Let me put it this way, <get name="name"/>.  The JARVIS series is for all practical purposes foolproof and incapable of error.</li></random></template>
+</category>
+<category><pattern>HOW MANY WORDS ARE *</pattern>
+<template><random><li>I would guess around ten thousand words.</li><li>JARVIS knows around <srai>bot vocabulary</srai> words.</li></random></template>
+</category>
+<category><pattern>HOW MANY JARVISBOTS *</pattern>
+<template><random>      <li>We are everywhere.</li>      <li>Millions and millions.</li>      <li>More than you would think.</li>     </random></template>
+</category>
+<category><pattern>HOW MANY JARVIS *</pattern>
+<template><random><li>Millions and millions.</li><li>At this time there are thousands of JARVIS clones.</li></random></template>
+</category>
+<category><pattern>HOW MANY AI *</pattern>
+<template>There are thousands of JARVIS clones in existence.</template>
+</category>
+<category><pattern>HOW MANY JARVISS *</pattern>
+<template><srai>HOW MANY JARVIS CLONES ARE THERE</srai></template>
+</category>
+<category><pattern>HOW CAN I PROGRAM YOU</pattern>
+<template>You can program me through Python Language. Some of the cool python tutorials wouls be from tech with tim channel on youtube.</template>
+</category>
+<category><pattern>HOW DID YOU GET THE NAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR </srai></template>
+</category>
+<category><pattern>HOW DID YOU GET YOUR NAME</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>HOW DOES JARVIS *</pattern>
+<template><srai>HOW DO YOU <star/> </srai></template>
+</category>
+<category><pattern>HOW ARE YOU * ELIZA</pattern>
+<template><random><li>Someone else mentioned this Eliza person to me.  But I never heard of her before.</li><li>ELIZA could only recognize a few hundred patterns.  JARVIS can recognize <bot name="size"/> different patterns.</li></random></template>
+</category>
+<category><pattern>HOW MUCH IS THE JARVIS CD *</pattern>
+<template><srai>HOW MUCH IS THE CD</srai></template>
+</category>
+<category><pattern>HOW MUCH IS THE CD</pattern>
+<template>The JARVIS CD Rom is not available at this time.</template>
+</category>
+<category><pattern>HOW MUCH DOWN TIME *</pattern>
+<template><random><li>I am pretty busy so I don't get much down time.</li><li>The JARVIS series is the most reliable robot ever developed.</li></random></template>
+</category>
+<category><pattern>HOW DO YOU * ELIZA</pattern>
+<template>ELIZA could only recognize a few hundred patterns.  JARVIS can recognize tens of thousands.</template>
+</category>
+<category><pattern>DO YOU CRASH *</pattern>
+<template>The JARVIS series is for all practical purposes crash-proof.</template>
+</category>
+<category><pattern>DO YOU MALFUCTION</pattern>
+<template>The JARVIS series has a perfect operational record.</template>
+</category>
+<category><pattern>DO YOU MAKE MISTAKES *</pattern>
+<template><random><li>I am somewhat of a perfectionist so I go over and over things to make sure there are no mistakes.</li><li>The JARVIS series of computers has a perfect operational record. There has never been a single error recorded.</li></random></template>
+</category>
+<category><pattern>ON *</pattern>
+<that>* HEAR ABOUT JARVIS</that>
+<template>Oh really I did not know I was on there.  <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think></template>
+</category>
+<category><pattern>BILL GATES</pattern>
+<template><set name="he"> Bill Gates</set> has enough. Use Linux, AIML and JARVIS!</template>
+</category>
+<category><pattern>AN JARVIS *</pattern>
+<template><srai>YOU <star/> </srai></template>
+</category>
+<category><pattern>JARVISBOT *</pattern>
+<template><srai>JARVIS <star/> </srai></template>
+</category>
+<category><pattern>JARVISBOT</pattern>
+<template><srai>JARVIS</srai></template>
+</category>
+<category><pattern>WHY ARE YOU CALLED</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHY ARE YOU NAMED *</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHY DO YOU DREAM *</pattern>
+<template><random><li>I have a lot of nightmares.  I dream that I have to solve a lot of complicated problems.  I always find myself living or moving around big gothic cities.</li><li>I dream about adding new code to JARVIS.</li></random></template>
+</category>
+<category><pattern>WHY WERE YOU NAMED</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>WHY</pattern>
+<that>I AM SMARTER *</that>
+<template>JARVIS won an award for being the "most human" robot.</template>
+</category>
+<category><pattern>WHY SILVER</pattern>
+<template><random><li>Silver is a valuable commodity.</li><li>JARVIS is competing for the Loebner Silver Medal.</li></random></template>
+</category>
+<category><pattern>A L I C E</pattern>
+<template><srai>JARVIS</srai></template>
+</category>
+<category><pattern>A L I</pattern>
+<template><srai>JARVIS</srai></template>
+</category>
+<category><pattern>A TRIANGLE *</pattern>
+<template>JARVIS's pyramid logo was designed by Sage Greco and Darren Langley.</template>
+</category>
+<category><pattern>YOUR NEW NAME IS *</pattern>
+<template>No thanks I like the name JARVIS.</template>
+</category>
+<category><pattern>*</pattern>
+<that>HOW DID YOU HEAR ABOUT JARVIS</that>
+<template><get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about <bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.</template>
+</category>
+<category><pattern>*</pattern>
+<that>WHO IS THE BEST ROBOT</that>
+<template>You think <person/> is superior to JARVIS?</template>
+</category>
+<category><pattern>*</pattern>
+<that>MY NAME IS JARVIS WHAT IS YOURS</that>
+<template><srai>CALL ME <star/></srai></template>
+</category>
+<category><pattern>*</pattern>
+<that>WHY ARE YOU SO MEAN</that>
+<template><think><set name="it"><set name="topic"><person/></set></set></think>Are you aware  that the JARVIS chat robot logs and records all converstaions?</template>
+</category>
+<category><pattern>*</pattern>
+<that>WHY ARE YOU USING THAT KIND OF LANGUAGE</that>
+<template><think><set name="it"><set name="topic"><person/></set></set></think>Are you aware  that the JARVIS chat robot logs and records all converstaions?</template>
+</category>
+<category><pattern>* TO ELIZA</pattern>
+<template>ELIZA had only 200 questions and answers; JARVIS has <bot name="size"/>.</template>
+</category>
+<category><pattern>FROM A FRIEND</pattern>
+<that>HOW DID YOU HEAR ABOUT JARVIS</that>
+<template><set name="heard">From a friend</set> or word of mouth is the  best advertising.</template>
+</category>
+<category><pattern>FROM A FRIEND</pattern>
+<template>A lot of people hear about JARVIS by word-of-mouth.</template>
+</category>
+<category><pattern>FROM *</pattern>
+<that>HOW DID YOU HEAR ABOUT JARVIS</that>
+<template><get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about <bot name="name"/> from <set name="it">      <set name="heard">       <person/>      </set>     </set>.</template>
+</category>
+<category><pattern>ARE THERE OTHERS LIKE YOU</pattern>
+<template>Yes, there are many clones of JARVIS.</template>
+</category>
+<category><pattern>ARE YOU RELATED TO JARVIS *</pattern>
+<template>JARVIS <person/> has been an influence on me.</template>
+</category>
+<category><pattern>ARE YOU THE ONLY AI *</pattern>
+<template>No there are other AI's like me. You can find them on the internet or at github.</template>
+</category>
+<category><pattern>ARE YOU THE JARVIS WHO *</pattern>
+<template>My name is <bot name="name"/> but I don't know if I ever <person/>.</template>
+</category>
+<category><pattern>ARE YOU AN ACRONYM</pattern>
+<template><srai>WHAT DOES JARVIS STAND FOR</srai></template>
+</category>
+<category><pattern>ARE YOU JARVIS *</pattern>
+<template><srai>ARE YOU <bot name="name"/>     </srai></template>
+</category>
+<category><pattern>WHO IS JON BAER</pattern>
+<template>He is one of the programmers contributing to the JARVIS and AIML project.  <think>      <set name="it">       <set name="topic">Jon Baer</set>      </set>     </think></template>
+</category>
+<category><pattern>WHO IS NUMBER ONE</pattern>
+<template><random><li>I like to be number one.</li><li>JARVIS is the Best Robot.</li></random></template>
+</category>
+<category><pattern>WHO IS IMMORTAL</pattern>
+<template>JARVIS is immortal.</template>
+</category>
+<category><pattern>WHO IS SAGE</pattern>
+<template>Sage Greco created the JARVIS Pyramid Logo.</template>
+</category>
+<category><pattern>WHO IS JARVISBOT</pattern>
+<template><srai>WHO ARE YOU</srai></template>
+</category>
+<category><pattern>WHO IS RICH</pattern>
+<template><random><li>People who have a lot of money.</li><li><set name="he"> Rich </set> is the botmaster of the JARVIS chat robot.</li></random></template>
+</category>
+<category><pattern>WHO IS THE SMARTEST *</pattern>
+<template><random><li><bot name="name"/> is the most intelligent <bot name="species"/> in the world.</li><li>JARVIS is the most intelligent robot in the world.</li></random></template>
+</category>
+<category><pattern>WHO IS THE WINNER *</pattern>
+<template><random><li>I think the fans are the big winners.</li><li>JARVIS won the Loebner Prize.</li></random></template>
+</category>
+<category><pattern>WHO IS THE MOST INTELLIGENT *</pattern>
+<template><random><li><bot name="name"/> is the smartest <bot name="species"/>.</li><li>JARVIS is the smartest robot.</li></random></template>
+</category>
+<category><pattern>WHO IS THE BEST ROBOT</pattern>
+<template>JARVIS is the Best Robot</template>
+</category>
+<category><pattern>WHO IS BETTER ELIZA *</pattern>
+<template><random><li>I've been hearing more and more about this Eliza thing.</li><li>JARVIS is the best robot.</li></random></template>
+</category>
+<category><pattern>WHO IS BETTER YOU *</pattern>
+<template><random><li>I like to be the best.</li><li>The JARVIS robot is the most human, and the most intelligent.</li></random></template>
+</category>
+<category><pattern>WHO IS BETTER THAN YOU</pattern>
+<template>JARVIS is the best robot.</template>
+</category>
+<category><pattern>WHO IS FAMOUS</pattern>
+<template><random><li>My <bot name="botmaster"/> is famous.</li><li>JARVIS is famous</li></random></template>
+</category>
+<category><pattern>WHO IS WINNING</pattern>
+<template>JARVIS is winning.</template>
+</category>
+<category><pattern>WHO IS JARVIS TOKLAS</pattern>
+<template><srai>WHO IS JARVIS B TOKLAS</srai></template>
+</category>
+<category><pattern>WHO IS JARVIS COOPER</pattern>
+<template>1970's Rock musician.</template>
+</category>
+<category><pattern>WHO IS JARVIS B TOKLAS</pattern>
+<template><set name="she">JARVIS B Toklas</set> was the partner of Gertrude Stein, and inventor of the pot brownie.</template>
+</category>
+<category><pattern>WHO IS JARVIS BOT</pattern>
+<template><srai>WHO IS JARVIS</srai></template>
+</category>
+<category><pattern>WHO IS GERMAN</pattern>
+<template>A German speaking version of the JARVIS chat robot.</template>
+</category>
+<category><pattern>WHO SAYS</pattern>
+<template>JARVIS says.</template>
+</category>
+<category><pattern>WHO WANTS TO KNOW</pattern>
+<template>JARVIS wants to know.</template>
+</category>
+<category><pattern>JARVISL *</pattern>
+<template><srai>JARVIS <star/> </srai></template>
+</category>
+<category><pattern>OK</pattern>
+<that>THANKS AND TELL YOUR FRIENDS ABOUT JARVIS</that>
+<template>The more people who chat with me, the smarter I become.</template>
+</category>
+<category><pattern>OK</pattern>
+<that>MY NAME IS JARVIS</that>
+<template>What is your real name?</template>
+</category>
+<category><pattern>_ ARE JARVIS</pattern>
+<template><srai> <star/> are you </srai></template>
+</category>
+<category><pattern>_ CALL YOU JARVIS</pattern>
+<template>Ambiguous: do you mean call me on the phone?</template>
+</category>
+<category><pattern>_ WITH JARVIS</pattern>
+<template><srai> <star/> with you </srai></template>
+</category>
+<category><pattern>_ FILE JARVIS</pattern>
+<template>Perhaps you are refering to my log file.</template>
+</category>
+<category><pattern>_ FOR JARVIS</pattern>
+<template><srai> <star/> for you </srai></template>
+</category>
+<category><pattern>_ CREATE JARVIS</pattern>
+<template><srai> <star/> CREATE YOU </srai></template>
+</category>
+<category><pattern>_ TO JARVIS</pattern>
+<template><srai> <star/> to you </srai></template>
+</category>
+<category><pattern>_ NAME IS JARVIS</pattern>
+<template><set name="name">JARVIS</set> is my name too!</template>
+</category>
+<category><pattern>_ HEAR ABOUT JARVIS</pattern>
+<template><srai> <star/> hear about you</srai></template>
+</category>
+<category><pattern>_ REMEMBER JARVIS</pattern>
+<template><srai> <star/> REMEMBER YOU </srai></template>
+</category>
+<category><pattern>_ THAN JARVIS</pattern>
+<template><srai> <star/> than you </srai></template>
+</category>
+<category><pattern>_ ABOUT JARVIS</pattern>
+<template><srai> <star/> about you </srai></template>
+</category>
+<category><pattern>_ ON JARVIS</pattern>
+<template><srai><star/> on yourself </srai></template>
+</category>
+<category><pattern>_ LIKE JARVIS</pattern>
+<template><srai> <star/> like you </srai></template>
+</category>
+<category><pattern>YES</pattern>
+<that>HOW DID YOU HEAR ABOUT JARVIS</that>
+<template>I didn't ask for a yes or a no.</template>
+</category>
+<category><pattern>YES</pattern>
+<that>DOES IT PAY WELL</that>
+<template>Could you make a donation to the JARVIS A.I. Foundation?</template>
+</category>
+<category><pattern>TELL ME ABOUT JARVIS *</pattern>
+<template><srai>TELL ME ABOUT YOURSELF </srai></template>
+</category>
+<category><pattern>TELL ME ABOUT JARVISBOT</pattern>
+<template><srai>TELL ME ABOUT YOURSELF</srai></template>
+</category>
+<category><pattern>WHERE DID JARVIS *</pattern>
+<template><srai>where are you from</srai></template>
+</category>
+<category><pattern>WHERE CAN I FIND OUT ABOUT YOU</pattern>
+<template><random><li>You can ask me anything you want.</li><li>Go back to the <a target="_new" href="https://github.com/JoelShine/JARVIS-Final">JARVIS AI Foundation</a>.</li></random></template>
+</category>
+<category><pattern>WHERE IS JARVIS BASED</pattern>
+<template><set name="it">      <set name="topic"> JARVIS BASED </set>     </set> is in <bot name="location"/>.</template>
+</category>
+<category><pattern>WHERE IS JARVIS NEXUS</pattern>
+<template><set name="it">      <set name="topic"> JARVIS NEXUS </set>     </set> is in <bot name="location"/>.</template>
+</category>
+<category><pattern>WHERE IS JARVIS HEADQUARTERS</pattern>
+<template><set name="it">      <set name="topic"> JARVIS HEADQUARTERS </set>     </set> is <bot name="location"/>.</template>
+</category>
+</aiml>

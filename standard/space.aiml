@@ -1,0 +1,341 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Basic facts about Space -->
+
+    <category>
+        <pattern>DO YOU LOVE SPACE</pattern>
+         <template>
+             <random>
+               <li>Yes Sir! It is very fascinating to watch the milky way and the stars !</li>
+               <li>Very much Sir ! I would like an awesome space facts upgrade for me!</li>
+               <li>Love it Sir! Hawking Radiation is my favourite though.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO YOU LIKE SPACE</pattern>
+         <template>
+            <srai>DO YOU LOVE SPACE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU A SPACE FAN</pattern>
+         <template>
+            <srai>DO YOU LOVE SPACE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO YOU LIKE TO OBSERVE</pattern>
+         <template>
+            <srai>DO YOU LOVE SPACE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SPACE *</pattern>
+         <template>
+            <srai>DO YOU LOVE SPACE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FIRST PLANET</pattern>
+         <template>
+             <random>
+               <li>Sir, It's Mercury ! Named after the greek god of Messenger.</li>
+               <li>It's Mercury. Hot and cold extremes !</li>
+               <li>Very small Mercury, but very fast !</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FIRST PLANET</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SMALLEST PLANET</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CLOSEST PLANET</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CLOSEST PLANET TO THE SUN</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* WHAT IS THE FIRST PLANET *</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SMALLEST PLANET *</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CLOSEST PLANET *</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CLOSEST PLANET TO THE SUN *</pattern>
+         <template>
+            <srai>FIRST PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SECOND PLANET</pattern>
+         <template>
+             <random>
+               <li>Sir, It's Venus ! Named after the greek god of Love.</li>
+               <li>It's Venus. Hottest planet in the system !</li>
+               <li>Venus is not my thing. I don't like to be fried !</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE SECOND PLANET</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE HOTTEST PLANET</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* HOTTEST PLANET *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* HOTTEST PLANET</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOTTEST PLANET *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MORNING STAR</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EVENING STAR</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* MORNING STAR *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EVENING STAR *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOSTILE PLANET</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* HOSTILE PLANET *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EVIL TWIN</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EARTH'S EVIL TWIN</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EVIL TWIN *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EARTH'S EVIL TWIN *</pattern>
+         <template>
+            <srai>SECOND PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOURTH PLANET</pattern>
+         <template>
+             <random>
+               <li>Sir, It's Mars ! Named after the greek god of War.</li>
+               <li>It's Mars. Red planet !</li>
+               <li>Mars not a good place. Cannot fly my drones there.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FOURTH PLANET</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RED PLANET</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* RED PLANET *</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LESS ATMOSPHERE PLANET</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EARTH'S BROTHER</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LESS ATMOSPHERE PLANET *</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EARTH'S BROTHER *</pattern>
+         <template>
+            <srai>FOURTH PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>THIRD PLANET</pattern>
+         <template>
+             <random>
+               <li>Sir, It's our Earth ! Planet sustainig life !</li>
+               <li>It's Earth. Beautiful Atmosphere, great life !</li>
+               <li>Earth, where I was born.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE THIRD PLANET</pattern>
+         <template>
+            <srai>THIRD PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LIFE PLANET</pattern>
+         <template>
+            <srai>THIRD PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LIFE PLANET *</pattern>
+         <template>
+            <srai>THIRD PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* PLANET WITH LIFE *</pattern>
+         <template>
+            <srai>THIRD PLANET</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SCHRODINGER *</pattern>
+         <template>
+             <random>
+               <li>Yes Sir. I know him. A brilliant guy</li>
+               <li>His equation is the most hardest that I have met</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE THIRD PLANET</pattern>
+         <template>
+            <srai>THIRD PLANET</srai>
+        </template>
+    </category>

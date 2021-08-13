@@ -1,0 +1,597 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Launching programs -->
+
+    <category>
+        <pattern>OPEN GOOGLE</pattern>
+         <template>
+             <random>
+               <li>Opening Google Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start chrome "www.google.com"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN GOOGLE</pattern>
+         <template>
+            <srai>OPEN GOOGLE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET WEATHER OF *</pattern>
+         <template>
+             <random>
+               <li>Fetching weather Sir !</li>
+               <li>Getting the weather Sir !</li>
+            </random>
+            <system>python programs/weather.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GET WEATHER</pattern>
+         <template>
+            <srai>GET WEATHER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN GITHUB</pattern>
+         <template>
+             <random>
+               <li>Opening Git hub Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start chrome "https://github.com/"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN GITHUB</pattern>
+         <template>
+            <srai>OPEN GITHUB</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN GIT HUB</pattern>
+         <template>
+            <srai>OPEN GITHUB</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN GIT HUB</pattern>
+         <template>
+            <srai>OPEN GITHUB</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN GITHUB DESKTOP</pattern>
+         <template>
+             <random>
+               <li>Opening Git hub Desktop Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\ProgramData\\joels\\GitHubDesktop\\GitHubDesktop.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN GITHUB DESKTOP</pattern>
+         <template>
+            <srai>OPEN GITHUB DESKTOP</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN SUBLIME TEXT</pattern>
+         <template>
+             <random>
+               <li>Opening Sublime Text Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\ProgramData\\joels\\GitHubDesktop\\GitHubDesktop.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN SUBLIME TEXT</pattern>
+         <template>
+            <srai>OPEN SUBLIME TEXT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN SUBLIMETEXT</pattern>
+         <template>
+            <srai>OPEN SUBLIME TEXT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN SUBLIMETEXT</pattern>
+         <template>
+            <srai>OPEN SUBLIME TEXT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WINDOWS TERMINAL</pattern>
+         <template>
+             <random>
+               <li>Opening WINDOWS TERMINAL Sir !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>wt.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WINDOWS TERMINAL</pattern>
+         <template>
+            <srai>OPEN WINDOWS TERMINAL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WEBEX APP</pattern>
+         <template>
+             <random>
+               <li>Opening WEBEX APP Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\Program Files (x86)\\Webex\\Webex\\Applications\\ptoneclk.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WEBEX APP</pattern>
+         <template>
+            <srai>OPEN WEBEX APP</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WEBEX</pattern>
+         <template>
+             <random>
+               <li>Opening WEBEX Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start chrome "https://globalpage-prod.webex.com/join?surl=https%3A%2F%2Fsignin.webex.com%2Fcollabs%2F%23%2Fmeetings%2Fjoinbynumber%3F"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WEBEX</pattern>
+         <template>
+            <srai>OPEN WEBEX</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WEBEX URL</pattern>
+         <template>
+            <srai>OPEN WEBEX</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WEBEX URL</pattern>
+         <template>
+            <srai>OPEN WEBEX</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN ZOOM</pattern>
+         <template>
+             <random>
+               <li>Opening Zoom Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\Users\\joels\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN ZOOM</pattern>
+         <template>
+            <srai>OPEN ZOOM</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CAMERA</pattern>
+         <template>
+             <random>
+               <li>Opening Camera Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start microsoft.windows.camera:</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CAMERA</pattern>
+         <template>
+            <srai>OPEN CAMERA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN NOTEPAD</pattern>
+         <template>
+             <random>
+               <li>Opening Notepad Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\WINDOWS\\system32\\notepad.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN NOTEPAD</pattern>
+         <template>
+            <srai>OPEN NOTEPAD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN NOTE</pattern>
+         <template>
+            <srai>OPEN NOTEPAD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN NOTE</pattern>
+         <template>
+            <srai>OPEN NOTEPAD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN GMAIL</pattern>
+         <template>
+             <random>
+               <li>Opening G mail Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start chrome "https://mail.google.com/"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN GMAIL</pattern>
+         <template>
+            <srai>OPEN GMAIL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN G MAIL</pattern>
+         <template>
+            <srai>OPEN GMAIL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN G MAIL</pattern>
+         <template>
+            <srai>OPEN GMAIL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN MAIL</pattern>
+         <template>
+            <srai>OPEN GMAIL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN MAIL</pattern>
+         <template>
+            <srai>OPEN GMAIL</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WOLFRAMALPHA</pattern>
+         <template>
+             <random>
+               <li>Opening Wolframalpha Sir !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start chrome "https://www.wolframalpha.com"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WOLFRAMALPHA</pattern>
+         <template>
+            <srai>OPEN WOLFRAMALPHA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET NEWS</pattern>
+         <template>
+             <random>
+               <li>Fetching the news Sir !</li>
+               <li>Getting news sir!</li>
+=            </random>
+            <system>start chrome "https://timesofindia.indiatimes.com/news"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* GET NEWS</pattern>
+         <template>
+            <srai>GET NEWS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SAY A JOKE</pattern>
+         <template>
+             <random>
+               <li>Fetching the news Sir !</li>
+               <li>Getting news sir!</li>
+=            </random>
+            <system>python programs/joke.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SAY A JOKE</pattern>
+         <template>
+            <srai>SAY A JOKE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOW NEWS</pattern>
+         <template>
+            <srai>GET NEWS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SHOW NEWS</pattern>
+         <template>
+            <srai>GET NEWS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CMD</pattern>
+         <template>
+             <random>
+               <li>Opening Command prompt !</li>
+               <li>Right away, sir!</li>
+               <li>On it Sir !</li>
+            </random>
+            <system>start C:\\WINDOWS\\system32\\cmd.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN COMMAND PROMPT</pattern>
+         <template>
+            <srai>OPEN CMD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN PROMPT</pattern>
+         <template>
+            <srai>OPEN CMD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN WHATSAPP</pattern>
+         <template>
+             <random>
+               <li>Opening Whatsapp !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>python programs/whatsapp.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN WHATSAPP</pattern>
+        <template>
+            <srai>OPEN WHATSAPP</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CALENDAR</pattern>
+         <template>
+             <random>
+               <li>Opening Calendar !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>python programs/calendar.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CALENDAR</pattern>
+        <template>
+            <srai>OPEN CALENDAR</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CODE</pattern>
+        <template>
+            <random>
+                <li>Opening Visual Studio code !</li>
+                <li>Opening Code !</li>
+            </random>
+            <system>code</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CODE</pattern>
+         <template>
+            <srai>OPEN CODE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHANGE WALLPAPER</pattern>
+        <template>
+            <random>
+                <li>New wallpaper added !</li>
+                <li>Changing Wallpaper Sir !</li>
+                <li>New mood Sir !</li>
+            </random>
+            <system>python programs/wallpaper.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHANGE WALLPAPER</pattern>
+         <template>
+            <srai>CHANGE WALLPAPER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHANGE THE WALLPAPER</pattern>
+         <template>
+            <srai>CHANGE WALLPAPER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CHANGE THE WALLPAPER</pattern>
+         <template>
+            <srai>CHANGE WALLPAPER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN YOUTUBE</pattern>
+         <template>
+             <random>
+               <li>Opening Youtube Sir !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>start chrome "www.youtube.com"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN YOUTUBE</pattern>
+         <template>
+            <srai>OPEN YOUTUBE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CALCULATOR</pattern>
+        <template>
+             <random>
+               <li>Opening Calculator</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>calc</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CALC</pattern>
+        <template>
+            <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CALC</pattern>
+        <template>
+            <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN CALCULATOR</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOGLE *</pattern>
+        <template>
+             <random>
+               <li>Searching for <star/></li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>start chrome "http://www.google.com/search?q=<star/>"</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>YOUTUBE *</pattern>
+        <template>
+             <random>
+               <li>Opening <star/> in youtube !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>start chrome "https://www.youtube.com/results?search_query=<star/>"</system>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>GOOGLE MAP *</pattern>
+        <template>
+             <random>
+               <li>Opening <star/> in google maps !</li>
+               <li>Right away, sir!</li>
+            </random>
+            <system>start chrome "https://www.google.co.in/maps/search/<star/>"</system>
+        </template>
+    </category>
+
+     <category>
+        <pattern>SEARCH FOR * ON GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAP <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * IN GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAP <star/></srai>
+        </template>
+    </category>
+
+</aiml>
