@@ -1,0 +1,6 @@
+vosk
+aiml
+playsound
+SpeechRecognition
+pyttsx3
+pyaudio
