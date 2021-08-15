@@ -40,7 +40,7 @@ For getting JARVIS up and running, the instructions are given below :
   
   <li> <h4> After installing python correctly, make sure you have pip installed on your machine. Open command prompt or powershelll and type <i>pip</i> or <i>pip3</i> if something shows up, it's fine but if it says "It is not recognised as an internal or external command", just google it on how to install pip.<br><br>How to fix pip - https://www.youtube.com/resultssearch_query=how+to+fix+pip+is+not+recognized+as+an+internal+or+external+command</h4></li>
   
-  <li><h4>Finally, once you install Python 64-bit version and pip, we can go on with installing the key dependencies.</h4></li>
+  <li><h4>Finally, once you install Python 64-bit version and pip, we can go on with installing the key dependencies. <br></h4></li>
 </ul>
 
 ### Installing the required modules
@@ -60,5 +60,14 @@ pip install -r requirements.txt
  pip install PyAudio‑0.2.11‑cp38‑cp38‑win_amd64.whl
  ```
  <ul>
-  <li>The above wheel is suitable for Python 3.8 version. amd64 means 64 bit and win32 means 32-bit. First pip install the wheel and then again run pip install -r requirements.txt . After all these procedures, we are ready to start testing out JARVIS</li>
+  <li>The above wheel is suitable for Python 3.8 version. amd64 means 64 bit and win32 means 32-bit. First pip install the wheel and then again run pip install -r requirements.txt . After all these procedures, we are ready to start testing out JARVIS. <br></li>
+  </ul>
+
+### Getting the models for our Speech Engine
+
+<ul>
+  <li><h4>Now, the next step is to download the models for our vosk speech Engine. Go to this website for downloading the model of your choice - https://alphacephei.com/vosk/models</h4><br></li>
+  <li>There are models available for several accents of English and I am currently using the Indian Model. If you are in USA, you could download the usa-english model. The model is not uploaded on github as it will take up large space.<br></li>
+  <li>Once you have downloaded the Vosk speech engine model, then extract all the files inside the downloaded folder and copy the files inside the <b>'vosk_speech_engine/model'</b> folder. Make sure to place this is the model folder inside vosk_speech_engine.<br></li>
+  <li>Once you have placed that, we can successfully run our JARVIS program</li>
   </ul>
