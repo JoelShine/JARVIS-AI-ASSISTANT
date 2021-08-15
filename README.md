@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ### Getting the models for our Speech Engine
 
 <ul>
-  <li><h4>Now, the next step is to download the models for our vosk speech Engine. Go to this website for downloading the model of your choice - https://alphacephei.com/vosk/models</h4><br></li>
+  <li><h4>Now, the next step is to download the models for our vosk speech Engine. Go to this website for downloading the model of your choice - https://alphacephei.com/vosk/models</h4></li>
   <li>There are models available for several accents of English and I am currently using the Indian Model. If you are in USA, you could download the usa-english model. The model is not uploaded on github as it will take up large space.<br></li>
   <li>Once you have downloaded the Vosk speech engine model, then extract all the files inside the downloaded folder and copy the files inside the <b>'vosk_speech_engine/model'</b> folder. Make sure to place this is the model folder inside vosk_speech_engine.<br></li>
   <li>Once you have placed that, we can successfully run our JARVIS program</li>
