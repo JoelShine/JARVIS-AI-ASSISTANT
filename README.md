@@ -46,9 +46,18 @@ For getting JARVIS up and running, the instructions are given below :
 ### Installing the required modules
 
 <ul>
-  <li><h4> First, navigate to this cloned repository and open cmd and then type</h4></li>
+  <li><h4> First, navigate to this cloned repository and open cmd and then type : </h4></li>
 </ul>
 
 ```
 pip install -r requirements.txt
 ```
+<ul>
+  <li>Most of the times, you may run into an error saying 'no module named pyaudio'. If there is any error on installing SpeechRecognition, do check out this website. Please download the ".whl" file of pyaudio of your python version. Link to website - https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio . After downloading that, pip install that .whl file. For Eg:</li>
+  </ul>
+ ```
+ pip install PyAudio‑0.2.11‑cp38‑cp38‑win_amd64.whl
+ ```
+ <ul>
+  <li>The above wheel is suitable for Python 3.8 version. amd64 means 64 bit and win32 means 32-bit. First pip install the wheel and then again run pip install -r requirements.txt . After all these procedures, we are ready to start testing out JARVIS</li>
+  </ul>
