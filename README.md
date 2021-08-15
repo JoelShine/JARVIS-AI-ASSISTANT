@@ -1,6 +1,7 @@
 <p align='center'>
-  <img scr = "https://github.com/JoelShine/JARVIS-AI-ASSISTANT/blob/main/jarvis-assets/J.A.R.V.I.S.png">
+  <img src = "https://github.com/JoelShine/JARVIS-AI-ASSISTANT/blob/main/jarvis-assets/J.A.R.V.I.S.png">
   </p>
+  
 # JARVIS-AI-ASSISTANT
 
 A true Artificial Intelligent Assistant with ALICE as backend and offline speech recognition with vosk engine and pyttsx3 as text to speech engine
