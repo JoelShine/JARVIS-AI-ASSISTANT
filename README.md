@@ -44,3 +44,9 @@ For getting JARVIS up and running, the instructions are given below :
 </ul>
 
 ### Installing the required modules
+
+<ul>
+  <li>'''
+    pip install -r requirements.txt
+  '''</li>
+</ul>
