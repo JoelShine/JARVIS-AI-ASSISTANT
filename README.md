@@ -46,8 +46,8 @@ For getting JARVIS up and running, the instructions are given below :
 ### Installing the required modules
 
 <ul>
-  <li><h4> First, navigate to this cloned repository and open cmd and then type:
-    ```bash
-    https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
-    ```</h4></li>
+  <li><h4> First, navigate to this cloned repository and open cmd and then type</h4></li>
 </ul>
+```bash
+pip install -r requirements.txt
+```
