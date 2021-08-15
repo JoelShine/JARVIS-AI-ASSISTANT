@@ -55,6 +55,7 @@ pip install -r requirements.txt
 <ul>
   <li>Most of the times, you may run into an error saying 'no module named pyaudio'. If there is any error on installing SpeechRecognition, do check out this website. Please download the ".whl" file of pyaudio of your python version. Link to website - https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio . After downloading that, pip install that .whl file. For Eg:</li>
   </ul>
+  
  ```
  pip install PyAudio‑0.2.11‑cp38‑cp38‑win_amd64.whl
  ```
