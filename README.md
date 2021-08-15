@@ -1,4 +1,6 @@
-<center><h1>JARVIS-AI-ASSISTANT</h1></center>
+<p align='center'>
+<h1>JARVIS-AI-ASSISTANT</h1>
+</p>
 
 <p align='center'>
   <img src = "https://github.com/JoelShine/JARVIS-AI-ASSISTANT/blob/main/jarvis-assets/J.A.R.V.I.S.png">
