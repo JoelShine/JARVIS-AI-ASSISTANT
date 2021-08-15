@@ -33,9 +33,14 @@ See my second JARVIS initiative (speech recognition) - https://github.com/JoelSh
 
 ## Setup Procedures
 For getting JARVIS up and running, the instructions are given below :
+
 ### Environment setup
 <ul>
   <li> <h4> You need to have Python 3.7 or later versions top run Jarvis. Jarvis is initially developed in Python 3.8.9, so getting the same version will be nice to avoid any other issues but 3.7 or later is also okay</h4> <b>Please note : Make sure to download Python 64 bit only ! Some modules are compatible only with 64 bit version.</b> <br><br> Download your python version from https://www.python.org/ <br> For getting Python 3.8.9, just click this link and download python for your os - https://www.python.org/downloads/release/python-389/ <br> Python 3.8.9 download for windows - https://www.python.org/ftp/python/3.8.9/python-3.8.9-amd64.exe <br></li>
   
   <li> <h4> After installing python correctly, make sure you have pip installed on your machine. Open command prompt or powershelll and type <i>pip</i> or <i>pip3</i> if something shows up, it's fine but if it says "It is not recognised as an internal or external command", just google it on how to install pip.<br><br>How to fix pip - https://www.youtube.com/resultssearch_query=how+to+fix+pip+is+not+recognized+as+an+internal+or+external+command</h4></li>
+  
+  <li><h4>Finally, once you install Python 64-bit version and pip, we can go on with installing the key dependencies.</h4></li>
 </ul>
+
+### Installing the required modules
