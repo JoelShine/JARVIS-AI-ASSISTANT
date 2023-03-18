@@ -12,7 +12,7 @@ Any issues on downloading and using this assistant, feel free to raise an [issue
 
 ## About JARVIS
 
-Jarvis is actually an ai which was introduced in the first Iron Man movie. A very spohisticated AI for Tony Stark made programmers think about making their on AI Assistants. This JARVIS also got it's inspiration fro Iron Man movies.
+Jarvis is actually an ai which was introduced in the first Iron Man movie. A very spohisticated AI for Tony Stark made programmers think about making their on AI Assistants. This JARVIS also got it's inspiration from Iron Man movies.
 
 JARVIS - **JOEL'S ARTIFICIAL REALISTIC VIRTUAL INTERNET SERVICE"**
 
