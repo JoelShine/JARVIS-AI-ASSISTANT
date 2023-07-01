@@ -63,7 +63,7 @@ while True:
         print(a)
 
         if a == "quit" or a == "exit" or a == "close" or a == "goodbye":
-            speak("THnak You Sir. Have a nice day !")
+            speak("Thank You Sir. Have a nice day !")
             print("Bye Sir. Have a nice day !")
             sys.exit()
 
