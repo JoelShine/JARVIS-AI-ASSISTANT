@@ -53,6 +53,10 @@ For getting JARVIS up and running, the instructions are given below :
 ```
 pip install -r requirements.txt
 ```
+
+```
+pip install python-aiml
+```
 <ul>
   <li>Most of the times, you may run into an error saying <b>'no module named pyaudio'</b>. If there is any error on installing SpeechRecognition, do check out this website. Please download the ".whl" file of pyaudio of your python version. Link to website - https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio . After downloading that, pip install that .whl file. For Eg:</li>
   </ul>
